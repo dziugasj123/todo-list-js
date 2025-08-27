@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="detail-overlay hidden">
+                <div class="overlay-container">
+                    <div class="overlay-close">
+                        <button class="overlay-close-btn">X</button>
+                    </div>
+                    <div class="overlay-details-info"></div>
+                </div>
+            </div>
+            <div class="add-task-overlay hidden">
+                <div class="add-task-overlay-container">
+                    <div class="add-task-overlay-close">
+                        <button class="add-task-overlay-close-btn">X</button>
+                    </div>
+                    <form class="add-task-overlay-details-info">
+                        <p class="add-task-text">NAME</p>
+                        <input type="text" class="add-task-overlay-name-input" id="myText" required>
+                        <p class="add-task-text">PROJECT NAME</p>
+                        <input type="text" class="add-task-overlay-project-input" id="myText">
+                        <p class="add-task-text">PRIORITY</p>
+                        <select name="priorities" class="add-task-overlay-priority-input" id="priority">
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                        <p class="add-task-text">DETAILS</p>
+                        <input type="text" class="add-task-overlay-details-input" id="myText">
+                        <p class="add-task-text">DUE DATE</p>
+                        <input type="date" class="add-task-overlay-date-input" id="myDate" value="" required>
+                        <button type="submit" class="submit-new-task">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar-links-container">
+                    <li><button type="button" class="home-link active"><span>Home</span></button></li>
+                    <li><button type="button" class="today-link"><span>Today</span></button></li>
+                    <li><button type="button" class="this-week-link"><span>This week</span></button></li>
+                </ul>
+                <ul class="project-container">
+                    <li class="project-title">PROJECT</li>
+                    <ul class="project-items-container"></ul>
+                </ul>
+                <ul>
+                    <li><button class="add-task-btn">add task</button></li>
+                </ul>
+            </nav>
+
+            <div class="main">
+                <div class="todo-wrap">
+                    <table class="todo-table">
+                        <colgroup>
+                            <col style="width:30%">
+                            <col style="width:15%">
+                            <col style="width:55%">
+                            <col style="width:25%">
+                        </colgroup>
+                        <tbody class="todo-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">made by dziugasj123</footer>
+</body>
+</html>
